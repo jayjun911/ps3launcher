@@ -22,7 +22,9 @@ To use with LaunchBox, register ps3launcher as a default PS3 emulator, then pass
 It has 'ps3launcher.ini' file that goes with it. 
 
 [launcher]
+
 emulator = .\rpcs3.exe
+
 driveLetter = E
 
 emulator is a path to the RPCS3 executable. By defualt, it looks for the RPCS3 in the same directory. 

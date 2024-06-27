@@ -23,17 +23,17 @@ It has 'ps3launcher.ini' file that goes with it.
 
 [launcher]
 
-emulator = .\rpcs3.exe
+emulator = [path_to]\rpcs3.exe
 
 driveLetter = E
 
-emulator is a path to the RPCS3 executable. By defualt, it looks for the RPCS3 in the same directory. 
-If you were to put ps3launcher any other location, modify ini file to point to the RPCS3 location. 
+emulator is a path to the RPCS3 executable, modify ini file to point to the right RPCS3 installation location. 
 
 driveLetter indicates the virtual bluray/dvd location. It tries to unmount whatever drive mounted at the location before tries to mount the new ISO. 
 this prevents ever-growing virtual drives. (eg. if an ISO is already mounted at E, new ISO will be mounted at F, G, ... etc)
-For whatever reasons, it fails to unmount at the location, it'll find next available mount point and mount it. 
-driveLetter doesn't need to be manually maintained as it'll automatically updated once it finds the right mount location. 
+For whatever reasons, if it fails to unmount at the given location, it'll find next available mount point and mount it. 
+driveLetter doesn't need to be manually maintained as it'll automatically updated once it finds the first available mount location. 
+However, if you know and want to use the available mount location, you may specify the location here. 
 
 note: it doesn't guarantee the mounting location. PowerShell/Windows interface doesn't have a way to mount ISO to a specific drive letter. 
 
